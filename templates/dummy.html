@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Dummy_page</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+<body>
+  <nav class="nav" style="background-color: gold; height: 100px;">
+    <a class="navbar-brand" >User Registration</a>
+    <a href="{% url 'Home_Page' %}" style="color: black; width: 100px;">Home Page</a>
+    <a href="{% url 'register' %}" style="color: black;">Registration Page</a>
+  </nav>
+    
+     
+
+
+
+
+
+
+
+
+
+
+    {% block body_block %}
+
+    {% endblock %}
+      <script src="{% static 'js/bootstrap.bundle.js'%}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+      <script src="{% static 'js/bootstrap.js'%}"></script>
+      <script src="{% static 'js/bootstrap.min.js'%}"></script>
+</body>
+</html>
